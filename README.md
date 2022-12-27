@@ -3,11 +3,12 @@
 
 ## TR
 PHP programlama dilini kullanarak IMAP E-Posta kutusuna bağlanmak için kullanılacak bir sınıftır. Bu class zaman içinde geliştirilmeye devam edilecektir. Her türlü fikre açığım.
+* Şuan sadece YANDEX ile test edildi
 
 
 ## EN
 It is a class to be used to connect to an IMAP Email box using the PHP programming language. This class will continue to be developed over time. I'm open to any ideas.
-
+* Currently only tested with YANDEX
 
 ## How To Use?
 
@@ -30,8 +31,39 @@ $emails = $IMAP->getAllMails();
 // Get a single mail overviews
 $overview = $IMAP->getMailOverview(5); 
 
+// Get a single mail seen or unseen status
+$seen = $IMAP->getMailSeen(5); 
+
+// Get a single mail Header information
+$header = $IMAP->getMailHeaderInfo(5);
+
+// Get a single mail Structure information. 
+$structure = $IMAP->getMailStructure(1);
+                    
+// Checking mail Structure, are have "parts" properties?
+$parts = $IMAP->checkMailHaveParts(1);
+
+// Get a single mail body. Some mails be multiparts (you can check it with checkMailHaveParts method ) and you must choose which want to one seeing.
+// if mail no multiparts then this method give you, what is mail having.
+
+// Get a single mail HTML body parts
+$body = $IMAP->getMailBody(5, "HTML");
+
+// Get a single mail PLAIN body parts
+$body = $IMAP->getMailBody(5, "PLAIN");
 
 
+// If you want, you can save sended mail in a IMAP Folder you choosing. If dont choose, mails save "Sent" folder. 
+// You can see Folders List with getIMAPFolders method.
+$IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
+// NOTE: For this method, $this->mail is a PHPMailer's mail. And must be like 
+
+// $this->mail = new PHPMailer(); 
+// ....
+// $this->mail->Send();
+// $IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
+
+// Then you's sended mail, can be saved IMAP Folders you choosing.
 
 
 ```
