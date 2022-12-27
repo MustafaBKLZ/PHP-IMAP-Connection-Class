@@ -1,13 +1,13 @@
-# PHP IMAP Connection Class
+# PHP IMAP Connection and Save Mails IMAP Folders Class
 
 
 ## TR
-PHP programlama dilini kullanarak IMAP E-Posta kutusuna bağlanmak için kullanılacak bir sınıftır. Bu class zaman içinde geliştirilmeye devam edilecektir. Her türlü fikre açığım.
+PHP programlama dilini kullanarak IMAP E-Posta kutusuna bağlanmak için kullanılacak bir sınıftır. Ek olarak gönderdiğiniz mailleri IMAP klasörlerinizde saklayabilme işlemi eklenmiştir. Bu class zaman içinde geliştirilmeye devam edilecektir. Her türlü fikre açığım.
 * Şuan sadece YANDEX ile test edildi
 
 
 ## EN
-It is a class to be used to connect to an IMAP Email box using the PHP programming language. This class will continue to be developed over time. I'm open to any ideas.
+It is a class to be used to connect to an IMAP Email box using the PHP programming language. Additionally, the process of storing the e-mails you send in your IMAP folders has been added. This class will continue to be developed over time. I'm open to any ideas.
 * Currently only tested with YANDEX
 
 ## How To Use?
