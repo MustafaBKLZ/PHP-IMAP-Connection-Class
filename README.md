@@ -69,3 +69,10 @@ $IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
 
 
 ```
+
+## To Do List
+
+- [ ]  Read get Mail's Attachment
+
+
+
