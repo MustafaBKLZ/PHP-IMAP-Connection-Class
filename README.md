@@ -12,6 +12,8 @@ It is a class to be used to connect to an IMAP Email box using the PHP programmi
 
 ## How To Use?
 
+I hope the explanations were sufficient.
+
 ```php
 //add class your project and call
 
