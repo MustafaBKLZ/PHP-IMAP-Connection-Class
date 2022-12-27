@@ -10,6 +10,12 @@ PHP programlama dilini kullanarak IMAP E-Posta kutusuna bağlanmak için kullan�
 It is a class to be used to connect to an IMAP Email box using the PHP programming language. Additionally, the process of storing the e-mails you send in your IMAP folders has been added. This class will continue to be developed over time. I'm open to any ideas.
 * Currently only tested with YANDEX
 
+
+## To Do List
+- [ ]  Read & get Mail's Attachments 
+- [ ]  Save mail's attachment in a hosting
+
+
 ## How To Use?
 
 I hope the explanations were sufficient.
@@ -70,9 +76,7 @@ $IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
 
 ```
 
-## To Do List
 
-- [ ]  Read get Mail's Attachment
 
 
 
