@@ -20,9 +20,8 @@ It is a class to be used to connect to an IMAP Email box using the PHP programmi
 
 I hope the explanations were sufficient.
 
-```php
+```PHP
 //add class your project and call
-
 $hostIMAP = "imap.yandex.com.tr:993/imap/ssl";
 $username = "your_user_name@domain.com";
 $password = "your_passowrd";
@@ -72,8 +71,6 @@ $IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
 // $IMAP->saveMailIMAPFolder($this->mail, "MySendedFolder");
 
 // Then you's sended mail, can be saved IMAP Folders you choosing.
-
-
 ```
 
 
